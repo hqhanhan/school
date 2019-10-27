@@ -10,6 +10,14 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 〈description〉<br>
+ * 〈checkService向mainService检测结果请求〉
+ *
+ * @author hqhan8080@Gmail.com
+ * @version V1.0
+ * @date 2019-10-26 16:10
+ */
 @Component
 public class CheckResponseMessageHandler implements MessageHandler<CheckResponseMessage> {
 

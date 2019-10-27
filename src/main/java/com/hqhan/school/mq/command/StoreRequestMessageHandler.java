@@ -9,7 +9,14 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
-
+/**
+ * 〈description〉<br>
+ * 〈mainService向reportService检测结果请求〉
+ *
+ * @author hqhan8080@Gmail.com
+ * @version V1.0
+ * @date 2019-10-26 16:45
+ */
 @Component
 public class StoreRequestMessageHandler implements MessageHandler<StoreRequestMessage> {
 

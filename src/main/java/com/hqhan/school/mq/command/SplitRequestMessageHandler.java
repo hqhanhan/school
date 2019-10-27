@@ -9,7 +9,14 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
-
+/**
+ * 〈description〉<br>
+ * 〈mainService向checkService拆分任务请求〉
+ *
+ * @author hqhan8080@Gmail.com
+ * @version V1.0
+ * @date 2019-10-26 11:22
+ */
 @Component
 public class SplitRequestMessageHandler implements MessageHandler<SplitRequestMessage> {
 

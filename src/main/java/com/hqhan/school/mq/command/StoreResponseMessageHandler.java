@@ -4,6 +4,14 @@ import com.hqhan.school.mq.Message;
 import com.hqhan.school.mq.MessageHandler;
 import org.springframework.stereotype.Component;
 
+/**
+ * 〈description〉<br>
+ * 〈暂无此项业务〉
+ *
+ * @author hqhan8080@Gmail.com
+ * @version V1.0
+ * @date 2019-10-26 16:45
+ */
 @Component
 public class StoreResponseMessageHandler implements MessageHandler<StoreResponseMessage> {
 

@@ -18,12 +18,13 @@ import javax.annotation.PostConstruct;
 @Component
 public class ZKCustor implements ZKHandler {
 
+    final static Logger log = LoggerFactory.getLogger(ZKCustor.class);
+
     @Autowired
     private Environment env;
 
     private CuratorFramework client = null;
 
-    final static Logger log = LoggerFactory.getLogger(ZKCustor.class);
 
     @PostConstruct
     public void init() {
@@ -35,7 +36,7 @@ public class ZKCustor implements ZKHandler {
         client.start();
         //FIXME 组装临时节点路径
         String path = getRegisterPath();
-        createEphemeralPath(path, buildPath("idle"));
+        createEphemeralPath(path, buildServerInfo("running"));
     }
 
 
@@ -53,6 +54,11 @@ public class ZKCustor implements ZKHandler {
         }
         return "";
 
+    }
+
+
+    public CuratorFramework getClient(){
+        return client;
     }
 
 
@@ -95,7 +101,7 @@ public class ZKCustor implements ZKHandler {
     }
 
 
-    private JSONObject buildPath(String status) {
+    private JSONObject buildServerInfo(String status) {
         //FIXME 自动获取ip，port
         JSONObject data = new JSONObject();
         data.put("ip", "127.0.0.1");

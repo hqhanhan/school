@@ -1,7 +1,15 @@
 package com.hqhan.school.mq.constants;
 
-public interface BusinessType {
 
+/**
+ * 〈description〉<br>
+ * 〈MQ业务关键字〉
+ *
+ * @author hqhan8080@Gmail.com
+ * @version V1.0
+ * @date 2019-10-25 10:44
+ */
+public interface BusinessType {
 
     String SPLIT_REQUEST = "SPLIT_REQUEST";
 
