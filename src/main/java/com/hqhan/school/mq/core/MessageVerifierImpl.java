@@ -2,7 +2,7 @@ package com.hqhan.school.mq.core;
 
 import com.hqhan.school.mq.Message;
 import com.hqhan.school.mq.MessageHandler;
-import com.hqhan.school.mq.command.NullMessage;
+import com.hqhan.school.mq.NullMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +10,12 @@ import org.springframework.core.GenericTypeResolver;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
 @Service
 public class MessageVerifierImpl implements MessageVerifier {
-
 
     private Logger logger = LoggerFactory.getLogger(MessageVerifierImpl.class);
 

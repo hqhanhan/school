@@ -1,4 +1,4 @@
-package com.hqhan.school.mq.command;
+package com.hqhan.school.mq;
 
 
 import com.hqhan.school.mq.Message;

@@ -3,6 +3,7 @@ package com.hqhan.school.mq.command;
 import com.alibaba.fastjson.JSON;
 import com.hqhan.school.mq.Message;
 import com.hqhan.school.mq.MessageHandler;
+import com.hqhan.school.mq.NullMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;

@@ -1,7 +1,5 @@
 package com.hqhan.school.mq;
 
-import com.hqhan.school.mq.command.NullMessage;
-import com.hqhan.school.mq.core.MessageVerifierImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
